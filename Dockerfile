@@ -56,7 +56,7 @@ COPY ./configuration/php.ini  ${PHP_CONF_DIR}/apache2/conf.d/custom.ini
 
 WORKDIR /var/www/aplikasi/
 RUN cd /var/www/aplikasi/
-RUN cp storage/env/.env.development .env
+#RUN cp storage/env/.env.development .env
 RUN composer install --ignore-platform-reqs
 # Ports
 EXPOSE 80
